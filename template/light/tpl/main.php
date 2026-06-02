@@ -14,22 +14,6 @@ require_once 'header.php'; ?>
                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-register-tab" data-toggle="tab" href="#nav-register"
                        role="tab" aria-controls="nav-register" aria-selected="true"><?php elang('register'); ?></a>
-                    <?php if (!get_config('disable_online_players')) { ?>
-                        <a class="nav-item nav-link" id="nav-serverstatus-tab" data-toggle="tab"
-                           href="#nav-serverstatus" role="tab" aria-controls="nav-serverstatus" aria-selected="false"><?php elang('server_status'); ?></a>
-                    <?php }
-                    if (!get_config('disable_top_players')) { ?>
-                        <a class="nav-item nav-link" id="nav-topplayers-tab" data-toggle="tab" href="#nav-topplayers"
-                           role="tab" aria-controls="nav-topplayers" aria-selected="false"><?php elang('top_players'); ?></a>
-                    <?php } ?>
-                    <a class="nav-item nav-link" id="nav-howtoconnect-tab" data-toggle="tab"
-                       href="#nav-howtoconnect" role="tab" aria-controls="nav-howtoconnect" aria-selected="false"><?php elang('how_to_connect'); ?></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                       role="tab" aria-controls="nav-contact" aria-selected="false"><?php elang('contact'); ?></a>
-                    <?php if(!empty(get_config('supported_langs'))) { ?>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="modal" data-target="#lang-modal"
-                       role="tab" aria-controls="nav-contact" aria-selected="false"><?php elang('change_lang_head'); ?></a>
-                    <?php } ?>
                 </div>
             </nav>
             <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">

@@ -7,8 +7,6 @@
 ?>
 </div>
 <footer class="text-center">
-    Developed by <a href="http://masterking32.com">MasterkinG32.CoM</a>
-    - <?php echo "Load " . (new SebastianBergmann\Timer\ResourceUsageFormatter)->resourceUsageSinceStartOfRequest(); ?>
 </footer>
 </body>
 </html>

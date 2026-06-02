@@ -8,14 +8,9 @@
 ?>
 
 <p>
-    <?php elang('read_before_register'); ?>
+    IMPORTANT NOTES
 </p>
 <ul>
-    <li><?php elang('rule'); ?> 1.</li>
-    <li><?php elang('rule'); ?> 2.</li>
-    <li><?php elang('rule'); ?> 3.</li>
-    <li><?php elang('rule'); ?> 4.</li>
-    <li><?php elang('rule'); ?> 5.</li>
-    <li><?php elang('rule'); ?> 6.</li>
-    <li><?php elang('edit_on'); ?> <b>"/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/tpl/rules.php"</b>.</li>
+    <li>1. "Secret Phrase" is something you get from Discord's "setup-guide" channel. If you don't have access to that, you won't be able to make an account.</li>
+    <li>2. If you recover your password, the new password will be sent to your email. Chances are it will be in your spam folder.</li>
 </ul>
