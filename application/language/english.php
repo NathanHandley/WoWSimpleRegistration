@@ -120,4 +120,6 @@ $language['hcaptcha_not_valid'] = 'HCaptcha is not valid.';
 $language['recaptcha_not_valid'] = 'ReCaptcha is not valid.';
 $language['turnstile_not_valid'] = 'Cloudflare Turnstile is not valid.';
 $language['captcha_required'] = 'Captcha is required.';
+$language['secret_phrase'] = 'Secret Phrase';
+$language['secret_phrase_not_valid'] = 'The secret phrase is incorrect. You can find it in the setup-guide channel on the Discord.';
 $language['language_btn'] = 'Language';

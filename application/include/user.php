@@ -79,6 +79,10 @@ class user
             return false;
         }
 
+        if (!secret_phrase_validation()) {
+            return false;
+        }
+
         if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             error_msg(lang('use_valid_email'));
             return false;
@@ -226,6 +230,10 @@ class user
         }
 
         if (!captcha_validation()) {
+            return false;
+        }
+
+        if (!secret_phrase_validation()) {
             return false;
         }
 

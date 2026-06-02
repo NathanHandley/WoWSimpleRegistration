@@ -117,6 +117,9 @@ $config['captcha_key'] = ''; // The site key for HCaptcha, Recaptcha, or Cloudfl
 $config['captcha_secret'] = ''; // The secret key for HCaptcha, Recaptcha, or Cloudflare Turnstile. Leave empty for image captcha.
 $config['captcha_language'] = 'en'; // Language for captcha (HCaptcha/ReCaptcha only). Cloudflare Turnstile auto-detects language.
 
+// Secret Phrase - An additional registration gate. Users must enter this exact phrase (leading/trailing spaces are ignored) to register.
+$config['secret_phrase'] = 'changeme'; // Share this value with your community (e.g. in the setup-guide channel on Discord).
+
 // SOAP Interface for Account Registration - Configure if you prefer to handle account creation through the SOAP interface.
 // You don't need to enable this if you are using the default account creation method or new type of cores.
 $config['soap_for_register'] = false; // Enable this only if you are certain of your SOAP configuration.

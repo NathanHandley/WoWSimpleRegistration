@@ -311,6 +311,16 @@ function captcha_validation()
     return true;
 }
 
+function secret_phrase_validation()
+{
+    if (trim($_POST['secret_phrase'] ?? '') !== (string) get_config('secret_phrase')) {
+        error_msg(lang('secret_phrase_not_valid'));
+        return false;
+    }
+
+    return true;
+}
+
 function getCaptchaJS()
 {
     if (!empty(get_config('captcha_type'))) {

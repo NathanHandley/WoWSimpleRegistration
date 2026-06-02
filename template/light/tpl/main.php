@@ -63,6 +63,11 @@ require_once 'header.php'; ?>
                                                name="repassword">
                                     </div>
                                     <?php echo GetCaptchaHTML();?>
+                                    <div class="input-group">
+                                        <span class="input-group"><?php elang('secret_phrase'); ?></span>
+                                        <input type="text" class="form-control" placeholder="<?php elang('secret_phrase'); ?>"
+                                               name="secret_phrase">
+                                    </div>
                                     <input name="submit" type="hidden" value="register">
                                     <div class="text-center" style="margin-top: 10px;"><input type="submit"
                                                                                               class="btn btn-danger"
